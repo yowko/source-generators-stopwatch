@@ -2,7 +2,11 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourceGeneratorsDemo", "SourceGeneratorsDemo\SourceGeneratorsDemo.csproj", "{741388CC-65E9-42AB-B05E-8E5CBA8DC38E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourceGenerators-ns20", "SourceGenerators-ns20\SourceGenerators-ns20.csproj", "{4AE27F0A-C09E-4137-BAC8-DE288090980F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourceGenerators_ns20", "SourceGenerators_ns20\SourceGenerators_ns20.csproj", "{4AE27F0A-C09E-4137-BAC8-DE288090980F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourceGenerators_ns21", "SourceGenerators_ns21\SourceGenerators_ns21.csproj", "{CA8F05E4-4C9B-4400-9104-E51145E0DAA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourceGenerators_net9", "SourceGenerators_net9\SourceGenerators_net9.csproj", "{B50AEF24-0D05-45F9-936B-6D7B047ED8C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +22,13 @@ Global
 		{4AE27F0A-C09E-4137-BAC8-DE288090980F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AE27F0A-C09E-4137-BAC8-DE288090980F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AE27F0A-C09E-4137-BAC8-DE288090980F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA8F05E4-4C9B-4400-9104-E51145E0DAA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA8F05E4-4C9B-4400-9104-E51145E0DAA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA8F05E4-4C9B-4400-9104-E51145E0DAA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA8F05E4-4C9B-4400-9104-E51145E0DAA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B50AEF24-0D05-45F9-936B-6D7B047ED8C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B50AEF24-0D05-45F9-936B-6D7B047ED8C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B50AEF24-0D05-45F9-936B-6D7B047ED8C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B50AEF24-0D05-45F9-936B-6D7B047ED8C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
