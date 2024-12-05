@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using SourceGenerators_ns20;
 
 namespace SourceGeneratorsDemo
 {

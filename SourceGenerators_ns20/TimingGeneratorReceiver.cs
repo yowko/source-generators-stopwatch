@@ -40,24 +40,24 @@ namespace SourceGenerators_ns20
         private SourceText GenerateTimedMethod(string @namespace, string className, string methodName)
         {
             SourceText sourceText = SourceText.From($@"
-                                    using System;
-                                    using System.Diagnostics;
+using System;
+using System.Diagnostics;
 
-                                    namespace {@namespace}
-                                    {{
-                                        public partial class {className}
-                                        {{
-                                            public void Receiver_{methodName}()
-                                            {{
-                                                long timestamp = Stopwatch.GetTimestamp();
-                                                
-                                                //Console.WriteLine($""正在生成 {@namespace}.{className} 的 Receiver_{methodName} 方法"");
-                                                {methodName}();
+namespace {@namespace}
+{{
+    public partial class {className}
+    {{
+        public void Receiver_{methodName}()
+        {{
+            long timestamp = Stopwatch.GetTimestamp();
+            
+            //Console.WriteLine($""正在生成 {@namespace}.{className} 的 Receiver_{methodName} 方法"");
+            {methodName}();
 
-                                                Console.WriteLine($""Receiver_{methodName} Elapsed time: {{Stopwatch.GetElapsedTime(timestamp)}} "");
-                                            }}
-                                        }}
-                                    }}", Encoding.UTF8);
+            Console.WriteLine($""Receiver_{methodName} Elapsed time: {{Stopwatch.GetElapsedTime(timestamp)}} "");
+        }}
+    }}
+}}", Encoding.UTF8);
             return sourceText;
         }
     }

@@ -38,25 +38,25 @@ namespace SourceGenerators_ns20
                         var className = containingClass.Identifier.Text;
                         
                         var newMethod = $@"
-                                        using System;
-                                        using System.Diagnostics;
+using System;
+using System.Diagnostics;
 
-                                        namespace {@namespace}
-                                        {{
-                                            public partial class {className}
-                                            {{
-                                                public void Execute_{methodName}()
-                                                {{
-                                                    long timestamp = Stopwatch.GetTimestamp();
-                                                    
-                                                    //Console.WriteLine($""正在生成 {@namespace}.{className} 的 Execute_{methodName} 方法"");
-                                                    {methodName}();
+namespace {@namespace}
+{{
+    public partial class {className}
+    {{
+        public void Execute_{methodName}()
+        {{
+            long timestamp = Stopwatch.GetTimestamp();
+            
+            //Console.WriteLine($""正在生成 {@namespace}.{className} 的 Execute_{methodName} 方法"");
+            {methodName}();
 
-                                           
-                                                    Console.WriteLine($""Execute_{methodName} Elapsed time: {{Stopwatch.GetElapsedTime(timestamp)}} "");
-                                                }}
-                                            }}
-                                        }}";
+   
+            Console.WriteLine($""Execute_{methodName} Elapsed time: {{Stopwatch.GetElapsedTime(timestamp)}} "");
+        }}
+    }}
+}}";
 
                         context.AddSource($"Execute_{containingClass.Identifier.Text}_{methodName}.g.cs",
                             SourceText.From(newMethod, Encoding.UTF8));

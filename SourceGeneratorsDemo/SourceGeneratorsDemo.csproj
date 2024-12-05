@@ -8,9 +8,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\SourceGenerators_ns20\SourceGenerators_ns20.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
-        <!--        <ProjectReference Include="..\SourceGenerators_net9\SourceGenerators_net9.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />-->
-        <!--        <ProjectReference Include="..\SourceGenerators_ns21\SourceGenerators_ns21.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>-->
+        <ProjectReference Include="..\SourceGenerators_ns20\SourceGenerators_ns20.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="true"/>
+        <!--        <ProjectReference Include="..\SourceGenerators_net9\SourceGenerators_net9.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="true" />-->
+        <!--        <ProjectReference Include="..\SourceGenerators_ns21\SourceGenerators_ns21.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="true"/>-->
 
     </ItemGroup>
 
